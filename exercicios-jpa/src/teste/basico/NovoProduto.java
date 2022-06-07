@@ -12,6 +12,5 @@ public class NovoProduto {
 		dao.incluirAtomico(produto).fechar();
 		
 		System.out.println("ID do Produto: " + produto.getId());
-		
 	}
 }
