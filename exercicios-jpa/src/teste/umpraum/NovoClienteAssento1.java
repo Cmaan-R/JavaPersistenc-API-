@@ -8,9 +8,9 @@ public class NovoClienteAssento1 {
 	
 	public static void main(String[] args) {
 		
-		Assento assento =new Assento("16C");
+		Assento assento =new Assento("23F");
 		
-		Cliente cliente = new Cliente("Ana", assento);
+		Cliente cliente = new Cliente("Beatriz", assento);
 		
 		DAO<Object> dao = new DAO<>();
 		
@@ -19,7 +19,5 @@ public class NovoClienteAssento1 {
 		.incluir(cliente)
 		.fecharT()
 		.fechar();
-		
-
 	}
 }
