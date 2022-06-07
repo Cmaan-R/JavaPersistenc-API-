@@ -14,12 +14,13 @@ public class NovoUsuario {
 				("exercicios-jpa");
 	    EntityManager em = emf.createEntityManager();
 	    
-	    Usuario novoUsuario = new Usuario("Djalma" , "Djalma@lanche.c.br");
+	    Usuario novoUsuario = new Usuario("Robson" , "robson@lanches.com.br");
 	    
+	    em.getTransaction().begin();
 	    em.persist(novoUsuario);
+	    em.getTransaction().commit();
 	    
-	    
-	    
+	    System.out.println("O ID Gerado foi: " + novoUsuario.getId());
 	    
 	    em.close();
 	    emf.close();
