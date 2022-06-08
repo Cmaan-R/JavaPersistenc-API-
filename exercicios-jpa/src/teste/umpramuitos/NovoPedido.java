@@ -21,6 +21,5 @@ public class NovoPedido {
 			.incluir(item)
 			.fecharT()
 			.fechar();
-		
 	}
 }
